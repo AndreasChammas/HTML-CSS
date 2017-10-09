@@ -1,0 +1,68 @@
+#myPop {
+  position: absolute;
+  right: 500px;
+  left: 500px;
+  border: 2px solid purple;
+  padding: 30px 20px 30px 70px;
+  border-radius: 20px;
+  height: 35em;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+}
+
+.close {
+  float: right;
+}
+
+.dropbtn {
+  background-color: grey;
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #eded07;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0d375b;
+}
+
+#new_friend {
+  display: inline-block;
+}
+
+#add {
+  display: inline-block;
+}
+
+#intressen, #skolan, #van {
+  margin-top: 50px;
+}

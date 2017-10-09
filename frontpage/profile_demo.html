@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>profil</title>
+
+  <script src="material-components-web/material-components-web.js"></script>
+  <script src="profil.js"></script>	
+  <link href="material-components-web/material-components-web.css" rel="stylesheet">
+  <link href="material-components-web/material-components-web-extra.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="profil.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+  <button id="myBtn">Min profil</button>
+  <div id="myPop" class="pop">
+    <div class="pop-content">
+      <div class="pop-header">
+        <span class="close">&times;</span><br>
+        <h2>Användersprofil</h2>
+      </div>
+      <p>Här skapar du din StudentLinksprofil.</p>
+      <form id="form" action="shop.html" method="post">
+        <div class="mdc-textfield">
+          <input type="text" id="my-textfield" placeholder="namn" class="mdc-textfield__input"><br>
+          <label class="mdc-textfield__label" for="my-textfield"></label><br>
+          <input type="text" id="my-textfield" placeholder="efternamn" class="mdc-textfield__input"><br>
+          <label class="mdc-textfield__label" for="my-textfield"></label><br>
+          <input type="text" placeholder="telefon" id="my-textfield" class="mdc-textfield__input"><br>
+          <label class="mdc-textfield__label" for="my-textfield"></label><br>
+          <input type="text" placeholder="e-post" id="my-textfield" class="mdc-textfield__input"><br>
+          <label class="mdc-textfield__label" for="my-textfield"></label><br>
+        </div>
+        <div id="foto">
+          <p>Välj din profilsfoto</p>
+          <input type="file" id="loadimg">
+          <button type="button" id="skicka">skicka</button>
+        </div>
+
+        <div id="skolan">Välj skolan
+          <select>
+        <option value="volvo">Göteborgs universitet</option>
+        <option value="saab">Chalmers</option>
+        <option value="opel">IT Högskolan </option>
+        <option value="audi">Salghrenska insitutet</option>
+      </select><br>
+        </div>
+        <div id="van">
+          <div class="dropdown">
+            <button class="dropbtn">Vänner</button>
+            <div class="dropdown-content">
+              <a href="#">Adam Svensson</a>
+              <a href="#">Annika Lindquist</a>
+              <a href="#">Ove Karlsson</a>
+            </div>
+            <div id="new_friend">Tilläg ny vän
+              <div class="mdc-textfield">
+                <input type="text" placeholder="name och efternamn" id="my-textfield" class="mdc-textfield__input">
+                <label class="mdc-textfield__label" for="my-textfield"></label>
+              </div>
+              <button type="button" id="add">add</button></div>
+          </div>
+        </div>
+        <div id="intressen">
+          <p>Ge en beskrivning av dina intressen</p>
+          <textarea name="message" rows="6" cols="63"></textarea>
+        </div><br>
+        <button type="button" id="spara">Spara</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

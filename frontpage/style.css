@@ -1,0 +1,441 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {max-width: 100%;
+}
+
+#glaset {
+  padding-left: 5px;
+}
+
+#space {
+  width: 2em;
+  height: 1em;
+}
+
+#filters {
+  position: relative;
+  margin: 2em auto auto auto;
+}
+
+#filters nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: baseline;
+}
+
+.chkbx {
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+.chkbx input {
+  margin-right: 10px;
+}
+
+.chkbx span {
+  font-size: 20px;
+}
+input[type="checkbox"] {
+  font-size: 25px;
+}
+
+#add-add {
+  position: absolute;
+  right: 2em;
+  font-size: 1.2rem;
+  margin-left: 0;
+	
+	
+}
+
+#lta {
+	font-size: 2em;
+}
+
+#add-add span {
+  font-family: 'Sedgwick Ave', cursive;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+#add-add span:hover {
+  font-size: 1.5rem;
+}
+
+
+#filters a:hover {
+  font-size: 1.2rem;
+  align-self: baseline;
+  padding: 0;
+}
+
+#add-container {
+  margin: 5em auto auto auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.adds {
+  margin: auto auto 2em auto;
+  width: 15em;
+  height: 15em;
+  box-shadow: 3px 3px 10px black;
+}
+
+.adds-hover {
+  display: flex;
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,0);
+  background-color: rgba(0,0,0,0);
+}
+
+.adds-hover div {
+  padding-left: 5px;
+  margin: auto;
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+
+#addnew {
+  position: inherit;
+  display: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#previewimg {
+  min-width: 120%;
+  min-height: 120%;
+  margin: -30px auto -30px;
+}
+
+#addnewhover {
+  display: flex;
+  position: relative;
+  top: -230px;
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,0);
+  background-color: rgba(0,0,0,0);
+}
+
+#addnewhover:hover {
+  display: flex;
+  position: relative;
+  top: -230px;
+  width: 15em;
+  height: 15em;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+}
+
+#miniheader {
+  padding-left: 5px;
+  margin: auto;
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+
+#add1 {
+  background-image: url(media/add1.png);
+  background-size: cover;
+}
+
+#addhover1:hover {
+
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+#add2 {
+  background-image: url(media/add2.png);
+  background-size: cover;
+}
+
+#addhover2:hover {
+
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+#add3 {
+  background-image: url(media/add3.png);
+  background-size: cover;
+}
+
+#addhover3:hover {
+
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+#add4 {
+  background-image: url(media/add4.png);
+  background-size: cover;
+}
+
+#addhover4:hover {
+  z-index: 1;
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+#add5 {
+  background-image: url(media/add5.png);
+  background-size: cover;
+}
+
+#addhover5:hover {
+
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+#add6 {
+  background-image: url(media/add6.png);
+  background-size: cover;
+}
+
+#addhover6:hover {
+
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+#add7 {
+  background-image: url(media/add7.png);
+  background-size: cover;
+}
+
+#addhover7:hover {
+
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+#add8 {
+  background-image: url(media/add8.png);
+  background-size: cover;
+}
+
+#addhover8:hover {
+
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+#add9 {
+  background-image: url(media/add9.png);
+  background-size: cover;
+}
+
+#addhover9:hover {
+
+  width: 15em;
+  height: 15em;
+  font-family: arial, sans-serif;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+#create1 {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.7);
+}
+
+#create1-content {
+  background-color: white;
+  width: 30em;
+  margin: 15vh auto;
+  padding: 2em;
+
+}
+
+#create1 form {
+
+  line-height: 3rem;
+  padding-left: 1em;
+  width: 26em;
+}
+
+#closeadd1 {
+  float: right;
+  margin-right: 2em;
+}
+
+#create1 h2 {
+font-family: 'Sedgwick Ave', cursive;
+}
+
+#create1 p, span {
+  line-height: 0.5rem;
+  font-family: robota, sans-serif;
+  font-size: 0.8rem;
+
+}
+
+#submitbtn {
+  float: right;
+  margin-right: 2em;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60vw;
+  height: 60vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+#close1 {
+  float: right;
+  font-size: 1.5rem;
+}
+
+#close2 {
+  float: right;
+  font-size: 1.5rem;
+}
+
+#close3 {
+  float: right;
+  font-size: 1.5rem;
+}
+
+#close4 {
+  float: right;
+  font-size: 1.5rem;
+}
+
+#close5 {
+  float: right;
+  font-size: 1.5rem;
+}
+
+#close6 {
+  float: right;
+  font-size: 1.5rem;
+}
+
+#close7 {
+  float: right;
+  font-size: 1.5rem;
+}
+
+#close8 {
+  float: right;
+  font-size: 1.5rem;
+}
+
+#close9 {
+  float: right;
+  font-size: 1.5rem;
+}
+
+.popup img {
+  height: 10em;
+  float: left;
+  padding: 4rem;
+}
+
+
+.popup dl {
+  padding-right: 4em;
+  line-height: 1.5rem;
+
+}
+
+.popup dt {
+
+  list-style: none;
+  font-family: arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.popup dd {
+  margin-top: 1em;
+  list-style: none;
+  font-family: arial, sans-serif;
+  font-size: 1rem;
+  font-weight: auto;
+}
+
+.sale {
+  display: block;
+}
+
+
+.exchange {
+  display: block;
+}

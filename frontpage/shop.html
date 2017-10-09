@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>köp/byt/sälj</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="material-components-web/material-components-web.js"></script>
+    <script src="javascript.js"></script>
+    <link href="material-components-web/material-components-web.css" rel="stylesheet">
+    <link href="material-components-web/material-components-web-extra.css" rel="stylesheet">
+  </head>
+  <body>
+	  <div class="toolbar">
+    <div class="logo">
+      <img id="loggan" src="images/logo2.png" alt="student_link" id="logotype">
+    </div>
+    <div id="topnav">
+
+
+      <a class="links" href="#">Allmänna Villkor</a><br>
+      <a class="links" href="#">Om StudentLink</a>
+    </div>
+  </div>
+  <header>
+    <div class="profilbild">
+      <img id="pb" src="images/profilepic.png" alt="profilbild">
+    </div>
+    <div class="info">
+      <h1>Användare</h1>
+    </div>
+    <div class="tools">
+      <a href="#">Vänner</a>
+      <a href="#">Inkorg[7]</a>
+      <a href="profile_demo.html">Profil</a>
+      <a href="#">Kalender</a>
+    </div>
+  </header>
+    
+	  <nav>
+      <span id="navbtn" onclick="openNav()">&#9776;</span>
+	  <div class="tools_mobil">
+      <a href="#">Vänner</a>
+      <a href="#">Inkorg[7]</a>
+      <a href="profile_demo.html">Profil</a>
+      <a href="#">Kalender</a>
+    </div>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">HEM</a>		  
+  <a href="#">NYHETER</a>
+  <a href="#">STUDIEHJÄLP</a>
+  <a href="#">BOENDE</a>
+  <a href="#">FORUM</a>        
+  <a href="#">ALLMÄNNA VILLKOR</a>        
+  <a href="#">OM STUDENTLINK</a>        
+</div>
+    <div class="menues">
+      <ul><li class="dropdown"><a href="index.html" class="dropdown-btn">HEM</a>
+
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-btn">NYHETER</a>
+          </li>
+            <li class="dropdown"><a href="#" class="dropdown-btn">STUDIEHJÄLP</a>
+
+            </li>
+              <li class="dropdown"><a href="#" class="dropdown-btn">BOENDE</a>
+
+              </li>
+                <li class="dropdown"><a href="#" class="dropdown-btn">FORUM</a>
+
+                </li>
+      </ul>
+    </div>
+
+  </nav>
+	  <article>
+	  <div class="intro">
+      <h2>StudentLink's Marknadsplats</h2>
+    </div>
+
+
+    <div id="filters">
+      <nav>
+        <div class="chkbx">
+			<input id="kop" type="checkbox" name="kop" value="Köp" checked><p>Köp</p>
+          <input id="byt" type="checkbox" name="Byt" value="Byt" checked><p>Byt<p>
+        </div>
+        <div id="space"></div>
+        <div class="mdc-textfield">
+          <input type="text" id="my-textfield" class="mdc-textfield__input" placeholder="Sök:">
+          <label class="mdc-textfield__label" for="my-textfield"></label>
+        </div>
+          <a href="#"><i id="glaset" class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <div id="add-add">
+          <a id="addanchor" href="#"><p id="lta">Lägg till annons!</p></a>
+          </div>
+        </nav>
+      </div>
+
+      <div id="create1">
+
+        <div id="create1-content">
+          <i id="closeadd1" class="fa fa-times" aria-hidden="true"></i>
+          <h2>Skapa en ny annons</h2>
+          <p>Här skapar du enkelt en ny annons, fyll i formuläret nedan.</p>
+          <form id="form" action="shop.html" method="post">
+            <input id="saljes" type="checkbox" name="kop" checked>Säljes
+            <input id="bytes" type="checkbox" name="byt">Bytes<br>
+
+            <div class="mdc-textfield">
+              <input type="text" id="my-textfield" placeholder="namn" class="mdc-textfield__input">
+              <label class="mdc-textfield__label" for="my-textfield"></label>
+            </div><br>
+
+            <div class="mdc-textfield">
+              <input type="text" placeholder="telefon" id="my-textfield" class="mdc-textfield__input">
+              <label class="mdc-textfield__label" for="my-textfield"></label>
+            </div><br>
+
+            <div class="mdc-textfield">
+              <input type="text" placeholder="e-post" id="my-textfield"  class="mdc-textfield__input">
+              <label class="mdc-textfield__label" for="my-textfield"></label>
+            </div>
+
+            <p>ange rubrik för din annons</p>
+            <textarea id="addheader" name="header" rows="1" value="" cols="63"></textarea>
+            <p>ge en beskrivning av vad du säljer/byter</p>
+            <textarea name="message" rows="6" cols="63">
+            </textarea>
+            <input id="pris" type="text" placeholder="ange pris"><span>   kronor</span><br>
+            <input type="file" id="loadimg">
+            <button type="button" id="skicka">skicka</button>
+          </form>
+        </div>
+
+      </div>
+
+
+
+      <div id="add1pop" class="popup">
+
+        <div id="add1-content" class="popup-content">
+          <i id="close1" class="fa fa-times" aria-hidden="true"></i>
+
+          <dl>
+            <dt>Kurslitteratur säljes</dt>
+
+            <dd>Jag är klar med första året på socionomprogrammet och önskar nu sälja delar av studielitteraturen.<dd>
+
+              <dd>Böckerna är i mycket gott skick och fria från anteckningar.</dd>
+
+              <dd>Jag betalade sammallagt kring 3 500kr för böckerna för knappt ett år sedan, och är nu villig att sälja dom för 1 000kr vid snabb affär och upphämtning.</dd>
+              <dd>kontakta mig för individuella priser</dd>
+              <dd>Mvh</dd>
+              <dd>Maja Asp, 072 XXX XXXX</dd>
+            </dl>
+            <img src="media/add1pop.png">
+
+        </div>
+
+      </div>
+
+      <div id="add2pop" class="popup">
+
+        <div id="add2-content" class="popup-content">
+          <i id="close2" class="fa fa-times" aria-hidden="true"></i>
+          <dl>
+            <dt>Busskort säljes</dt>
+
+            <dd>Jag säljer ett västtraffik-kort, giltigt inom Göteborg, på grund av flytt.<dd>
+
+              <dd>Kortet gäller till och med maj 2018.</dd>
+
+              <dd>2 500kr</dd>
+              <dd>Mvh</dd>
+              <dd>Erik, 072 XXX XXXX</dd>
+            </dl>
+            <img src="media/add2pop.png">
+        </div>
+
+      </div>
+
+      <div id="add3pop" class="popup">
+
+        <div id="add3-content" class="popup-content">
+          <i id="close3" class="fa fa-times" aria-hidden="true"></i>
+            <dl>
+              <dt>matematik 5000 bytes</dt>
+
+                <dd>boken är i gott skick men jag skulle gärna byta den mot en bok i grundläggande fysik då jag bytt inriktning</dd>
+
+                <dd>Mvh</dd>
+                <dd>Horace, 070 XXX XXXX</dd>
+              </dl>
+              <img src="media/add3pop.png">
+        </div>
+
+      </div>
+
+      <div id="add4pop" class="popup">
+
+        <div id="add4-content" class="popup-content">
+			<i id="close4" class="fa fa-times" aria-hidden="true"></i>
+            <dl>
+              <dt>ryggsäck säljes</dt>
+
+              <dd>Hej!<dd>
+
+                <dd>grön Fjällräven kånken, väldigt sparsamt använd i perfekt skick säljes</dd>
+
+                <dd>300kr</dd>
+                <dd>Mvh</dd>
+                <dd>Max, 073 XXX XXXX</dd>
+              </dl>
+              <img src="media/add4pop.png">
+        </div>
+
+      </div>
+
+      <div id="add5pop" class="popup">
+
+        <div id="add5-content" class="popup-content">
+          <i id="close5" class="fa fa-times" aria-hidden="true"></i>
+          <dl>
+            <dt>4 ölglas i låda</dt>
+
+            <dd>Till salu: 4 ölglas (500ml)<dd>
+
+              <dd>Jag vann dessa i en frågesport, levereras i oöppnad originalförpackning. Ordinarie pris 299kr</dd>
+
+              <dd>150kr</dd>
+              <dd>Mvh</dd>
+              <dd>Johnny, 072 XXX XXXX</dd>
+            </dl>
+            <img src="media/add5pop.png">
+        </div>
+
+      </div>
+
+      <div id="add6pop" class="popup">
+
+        <div id="add6-content" class="popup-content">
+          <i id="close6" class="fa fa-times" aria-hidden="true"></i>
+          <dl>
+            <dt>Diverse sällskapsspel</dt>
+
+            <dd>Min sambo klagar på att mina brädspel tar för mycket plats och tvingar mig sälja dom. Dom är lite nötta men kompletta.<dd>
+
+              <dd>Kom med bud!</dd>
+
+              <dd>Annika, 072 XXX XXXX</dd>
+            </dl>
+            <img src="media/add6pop.png">
+        </div>
+
+      </div>
+
+      <div id="add7pop" class="popup">
+
+        <div id="add7-content" class="popup-content">
+          <i id="close7" class="fa fa-times" aria-hidden="true"></i>
+          <dl>
+            <dt>Ananaslampa mässing</dt>
+
+            <dd>Ananas lampa tillverkad av Gusums mässing säljes för oslagbara 500kr! <dd>
+
+              <dd>Alla som vet något om inredningen vet hur het ananasen är</dd>
+
+              <dd>500kr</dd>
+              <dd>Mvh</dd>
+              <dd>Matilda, 072 XXX XXXX</dd>
+            </dl>
+            <img src="media/add7pop.png">
+        </div>
+
+      </div>
+
+      <div id="add8pop" class="popup">
+
+        <div id="add8-content" class="popup-content">
+          <i id="close8" class="fa fa-times" aria-hidden="true"></i>
+          <dl>
+            <dt>Kurslitteratur konstvetenskap A och idehistoria A, B</dt>
+
+            <dd>Hej!<dd>
+
+              <dd>Jag vill byta mina böcker om idéhistoria och konstvetenskap mot... kom med förslag! </dd>
+
+              <dd>Hälsningar,</dd>
+              <dd>Niklas, 073 XXX XXXX</dd>
+            </dl>
+            <img src="media/add8pop.png">
+        </div>
+
+      </div>
+
+      <div id="add9pop" class="popup">
+
+        <div id="add9-content" class="popup-content">
+          <i id="close9" class="fa fa-times" aria-hidden="true"></i>
+          <dl>
+            <dt>Ölhatt bortskänkes</dt>
+
+            <dd>Då jag snart är klar med mina universitetsstudier är det hög tid att börja leta efter ett nytt hem för min ölhatt. Det smärtar mig att ta förväl, men hatten trivs bäst i en studentikos miljö. Bortskänkes till rätt person.<dd>
+
+              <dd>Peder, 072 XXX XXXX</dd>
+            </dl>
+            <img src="media/add9pop.png">
+        </div>
+
+      </div>
+
+
+    <div id="add-container">
+
+      <div class="adds" id="addnew"><img id="previewimg" src="">
+        <div id="addnewhover">
+          <div id="miniheader"></div>
+        </div>
+        </div>
+
+
+      <div class="adds sale" id="add1">
+        <div class="adds-hover" id="addhover1">
+          <div>kurslitteratur för socionomprogrammet. paketpris<br>pris 1 000kr</div>
+        </div>
+      </div>
+
+      <div class="adds sale" id="add2">
+        <div class="adds-hover" id="addhover2">
+          <div>årskort med västtrafik. 8 månader<br>pris 2 500kr</div>
+        </div>
+      </div>
+
+      <div class="adds exchange" id="add3">
+        <div class="adds-hover" id="addhover3">
+          <div>kurslitteratur: Matematik 5000<br>bytes</div>
+        </div>
+      </div>
+
+      <div class="adds sale" id="add4">
+        <div class="adds-hover" id="addhover4">
+          <div>fjällräven kånken, nyskick<br>pris: 300kr</div>
+        </div>
+      </div>
+
+      <div class="adds sale" id="add5">
+        <div class="adds-hover" id="addhover5">
+            <div>4st ölglas, oöppnad förpackning<br>pris: 150kr</div>
+        </div>
+      </div>
+
+      <div class="adds sale" id="add6">
+        <div class="adds-hover" id="addhover6">
+          <div>begagnade sällskapsspel<br>pris: kom med bud</div>
+        </div>
+      </div>
+
+      <div class="adds sale" id="add7">
+        <div class="adds-hover" id="addhover7">
+          <div>ananas-lampa från gusums mässing<br>pris: 500kr</div>
+        </div>
+      </div>
+
+      <div class="adds exchange" id="add8">
+        <div class="adds-hover" id="addhover8">
+          <div>kurslitteratur konst och idéhistoria<br>bytes</div>
+        </div>
+      </div>
+
+      <div class="adds sale" id="add9">
+        <div class="adds-hover" id="addhover9">
+          <div>ölhatt söker nytt hem<br>pris: 0kr</div>
+        </div>
+      </div>
+
+    </div>
+</article>
+	  
+  </body>
+</html>
